@@ -87,6 +87,8 @@ de control y robótica. Enseñar me obliga a entender de verdad, y a explicar cl
 
 ### 📫 Contacto
 
+🌐 **[confederador.github.io](https://confederador.github.io)** — portfolio completo
+
 [LinkedIn](https://linkedin.com/in/martinalejandrocontereras) · martinalejandrocontreras@outlook.es
 
 <br>
@@ -177,3 +179,5 @@ under pressure.
 ### 📫 Contact
 
 [LinkedIn](https://linkedin.com/in/martinalejandrocontereras) · martinalejandrocontreras@outlook.es
+
+🌐 **[confederador.github.io](https://confederador.github.io)** — full portfolio
