@@ -4,17 +4,22 @@
 
 ---
 
-**Administrador SAP Basis y de plataformas.** Buenos Aires, Argentina.
+**Administrador SAP Basis y de plataformas IT.** Buenos Aires, Argentina.
 
-Más de 6 años en IT, 4 de ellos sobre SAP S/4HANA en producción bajo compliance bancario.
-Última barrera de control de cambios antes de producción, y autoridad de acceso privilegiado
-para el soporte internacional de SAP.
+Más de 6 años en IT, 4 de ellos en GIRE bajo compliance bancario y casi 2 administrando SAP en
+producción (S/4HANA Basis y BusinessObjects). Fui la última barrera de control de cambios antes de
+producción y la autoridad de acceso privilegiado para el soporte internacional de SAP.
+
+En los últimos meses me apoyé fuerte en la **IA** para construir mi propio producto de punta a punta.
 
 Vengo del hardware y subí por infraestructura: técnico de campo en sucursales bancarias →
-responsable único de IT de un edificio → Active Directory a escala → SAP Basis → plataformas
-y seguridad.
+único técnico on-site de un edificio, mano derecha de mi jefe → Active Directory a escala →
+SAP Basis → plataformas y seguridad.
 
 🔎 Buscando roles de **SAP Basis · Seguridad SAP · Plataformas e Infraestructura**.
+
+📄 **Dos CVs para elegir** — Infraestructura (IT Platform Administrator) y SAP Basis:
+[confederador.github.io/#cv](https://confederador.github.io/#cv)
 
 ### Lo que administro
 
@@ -29,53 +34,60 @@ en red segmentada sin salida a internet · CMC · autenticación LDAP / Active D
 repositorio Oracle · Tomcat y keystore Java · arquitectura de nodo APS · diagnóstico en producción
 
 **Infraestructura**
-RHEL / Linux · Red Hat OpenShift · Active Directory y migración de dominio completa · GPOs ·
-diseño de reglas de firewall · balanceo F5 · certificados TLS · MDM sobre 140 dispositivos ·
-operación de Data Center · redes LAN
+RHEL / Linux · Red Hat OpenShift · APIs e IBM API Gateway · Active Directory y migración de
+dominio completa · GPOs · diseño de reglas de firewall · integración con balanceador F5 ·
+certificados TLS · servidor de backup en cinta HPE LTO-7 · VMware · MDM sobre 140 dispositivos,
+incluida la configuración de los Zebra · operación de Data Center · redes LAN
 
 **Operación y seguridad**
 Circuito formal de service desk · ventanas de mantenimiento coordinadas · on-call sobre HANA ·
 definición de política de backup · monitoreo SNMP · respuesta a incidente de ransomware ·
 compliance bancario
 
-### 🐔 GAUCHO Aves — mi proyecto propio
+### 🐔 Gaucho Agro · Aves — mi proyecto propio
 
-Software de gestión avícola para granjas de gallinas ponedoras en Argentina.
+Software de gestión avícola para granjas de gallinas ponedoras en Argentina. Lo diseñé y dirijo su
+construcción: **el código lo escribe la IA bajo mi dirección**, con Claude Code y Gemini.
 
 - Corre **offline** en la PC del campo. Los empleados cargan desde el celular por WiFi local.
   Las granjas no tienen conectividad: el sistema no puede depender de ella.
 - Resuelve el cumplimiento **DT-e / SENASA**, que ningún competidor local cubre.
-- Inventario por lote, producción, sanidad y alertas INTA.
+- Inventario por lote, producción, sanidad, economía, incubación y alertas con valores INTA.
 - **Instalador todo-en-uno de Windows**: Python embebido + PostgreSQL portable + Inno Setup.
   El productor hace doble clic y anda. Sin dependencias, sin internet.
-- **109 archivos de test automatizados** en el backend.
+- **Más de 300 tests automatizados** en el backend.
 
 `Python` · `FastAPI` · `PostgreSQL` · `React` · `Inno Setup`
 
 🌐 **[gauchoagro.com](https://gauchoagro.com)** — el repositorio es privado por ser un producto
 comercial.
 
-### 🛠️ Cómo trabajo
+### 🤖 Cómo trabajo con IA
 
-Construí GAUCHO solo y de forma autodidacta, y para lograrlo tuve que resolver un problema
-aparte: **cómo sostener un proyecto largo sin depender de mi memoria.**
+Gaucho Agro lo construí solo, y la IA fue parte del equipo desde el primer día. Para que funcionara
+tuve que resolver un problema aparte: **cómo hacer que una IA trabaje con reglas, y no de memoria.**
 
-Terminé diseñando el andamiaje antes que el código:
+- **Varias IAs, una sola escribe** — proponen varias, escribe una sola, con reglas por escrito.
+  Comparé modelos sobre la misma especificación: donde la spec es precisa convergen; donde calla,
+  aparece el criterio de cada uno.
+- **Reglas que se aplican solas** — hooks que le reinyectan a la IA la tarea en curso en cada
+  mensaje, y skills propias: una arranca cada sesión al día, otra guarda el avance haciendo build,
+  tests y commit, solo si todo pasa.
+- **Memoria en archivos, no en el chat** — el contexto vive en archivos versionados: cualquiera,
+  persona o IA, arranca en frío sin preguntar nada. Y un documento se marca vencido apenas deja de
+  ser cierto.
+- **La IA escribe, los tests deciden** — más de 300 tests automatizados son la puerta: nada se
+  commitea si no pasan.
 
-- **Protocolo de orquestación de IAs** — varias asistentes proponen, una sola escribe.
-  Reglas por escrito, no improvisación.
-- **Memoria en archivos versionados** — el contexto vive en el repositorio, no en una
-  conversación. Cualquiera, persona o IA, puede arrancar en frío sin preguntar nada.
-- **Disciplina de handover** — los documentos se marcan como caducos cuando dejan de ser
-  ciertos. Un documento desactualizado traiciona al que lo lee.
-
-Es la misma lógica que aplico en infraestructura: **que cada cambio tenga dueño, registro y
-forma de volver atrás.**
+Es la misma lógica que aplico en infraestructura: **que cada cambio tenga dueño, registro y forma
+de volver atrás.** Y es lo que quiero llevar a la operación de plataformas: automatizar lo
+repetitivo de Basis con IA, sin perder el control de cambios.
 
 ### 👨‍🏫 Docencia
 
-Profesor de secundaria — sistemas, 4to año. Binario, electricidad, resistencias, estructuras
-de control y robótica. Enseñar me obliga a entender de verdad, y a explicar claro bajo presión.
+Profesor de informática en secundaria (DGCyE, Provincia de Buenos Aires), desde enero de 2025 —
+4to año: binario, electricidad, resistencias, estructuras de control y robótica. Enseñar me obliga
+a entender de verdad, y a explicar claro bajo presión.
 
 ### 🎓 Formación
 
@@ -87,7 +99,7 @@ de control y robótica. Enseñar me obliga a entender de verdad, y a explicar cl
 
 ### 📫 Contacto
 
-🌐 **[confederador.github.io](https://confederador.github.io)** — portfolio completo
+🌐 **[confederador.github.io](https://confederador.github.io)** — portfolio completo y los dos CVs
 
 [LinkedIn](https://linkedin.com/in/martinalejandrocontereras) · martinalejandrocontreras@outlook.es
 
@@ -97,15 +109,22 @@ de control y robótica. Enseñar me obliga a entender de verdad, y a explicar cl
 
 ## 🇬🇧 English
 
-**SAP Basis and platform administrator.** Buenos Aires, Argentina.
+**SAP Basis and IT platform administrator.** Buenos Aires, Argentina.
 
-Over 6 years in IT, 4 of them on SAP S/4HANA in production under banking compliance. I was the
-last control before production, and the access authority for SAP international support.
+6+ years in IT, including 4 years at GIRE under banking compliance and nearly 2 years administering
+SAP in production (S/4HANA Basis and BusinessObjects). I was the final change-control gate before
+production, and the privileged-access authority for SAP international support.
 
-I came up through hardware and infrastructure: field technician in bank branches → sole IT
-owner of a site → Active Directory at scale → SAP Basis → platforms and security.
+Over the last few months I've leaned heavily on **AI** to build my own product end to end.
+
+I came up through hardware and infrastructure: field technician in bank branches → sole on-site
+technician of a building, my manager's right hand → Active Directory at scale → SAP Basis →
+platforms and security.
 
 🔎 Open to **SAP Basis · SAP Security · Platforms and Infrastructure** roles.
+
+📄 **Two CVs to choose from** — Infrastructure (IT Platform Administrator) and SAP Basis:
+[confederador.github.io/#cv](https://confederador.github.io/#cv)
 
 ### What I administer
 
@@ -115,58 +134,65 @@ PFCG / SU01 / SU10 · SPAM / SNOTE · SM36 / SM37 · SAP OSS and SAP for Me ·
 privileged access management
 
 **SAP BusinessObjects**
-Installed and deployed BO 4.3 on RHEL 9 across three environments, entirely from the console,
-in a segmented network with no internet access · CMC · LDAP / Active Directory authentication ·
-Oracle repository · Tomcat and Java keystore · APS node architecture · production troubleshooting
+Installation and deployment of BO 4.3 on RHEL 9 across three environments, entirely from the
+console, in a segmented network with no internet access · CMC · LDAP / Active Directory
+authentication · Oracle repository · Tomcat and Java keystore · APS node architecture ·
+production troubleshooting
 
 **Infrastructure**
-RHEL / Linux · Red Hat OpenShift · Active Directory and full domain migration · GPOs ·
-firewall rule design · F5 load balancing · TLS certificates · MDM across 140 devices ·
+RHEL / Linux · Red Hat OpenShift · APIs and IBM API Gateway · Active Directory and full domain
+migration · GPOs · firewall rule design · F5 load-balancer integration · TLS certificates ·
+HPE LTO-7 tape backup server · VMware · MDM across 140 devices, including Zebra configuration ·
 data center operations · LAN
 
 **Operations and security**
 Formal service desk process · coordinated maintenance windows · HANA on-call ·
 backup policy definition · SNMP monitoring · ransomware incident response · banking compliance
 
-### 🐔 GAUCHO Aves — my own product
+### 🐔 Gaucho Agro · Aves — my own product
 
-Farm management software for laying-hen poultry farms in Argentina.
+Farm management software for laying-hen poultry farms in Argentina. I designed it and I direct its
+build: **the code is written by AI under my direction**, with Claude Code and Gemini.
 
 - Runs **offline** on the farm's own PC. Staff enter data from their phones over the local
   WiFi. Farms have no connectivity, so the system cannot depend on it.
 - Solves **DT-e / SENASA** government traceability compliance, which no local competitor covers.
-- Flock inventory, production, animal health, and INTA-based alerts.
+- Flock inventory, production, animal health, economics, incubation, and INTA-based alerts.
 - **Self-contained Windows installer**: embedded Python + portable PostgreSQL + Inno Setup.
   The farmer double-clicks and it runs. No dependencies, no internet.
-- **109 automated test files** in the backend.
+- **300+ automated tests** in the backend.
 
 `Python` · `FastAPI` · `PostgreSQL` · `React` · `Inno Setup`
 
 🌐 **[gauchoagro.com](https://gauchoagro.com)** — the repository is private, as it is a
 commercial product.
 
-### 🛠️ How I work
+### 🤖 How I work with AI
 
-I built GAUCHO alone and self-taught, and to get there I had to solve a separate problem
-first: **how to sustain a long project without relying on my own memory.**
+I built Gaucho Agro alone, and AI was part of the team from day one. To make it work I had to
+solve a separate problem first: **how to get an AI to work by rules, not by memory.**
 
-I ended up designing the scaffolding before the code:
-
-- **An AI orchestration protocol** — several assistants propose, only one writes. Written
-  rules, not improvisation.
-- **Memory in version-controlled files** — context lives in the repository, not in a chat.
-  Anyone, human or AI, can start cold without asking a single question.
-- **Handover discipline** — documents are marked stale the moment they stop being true. A
-  document that lies betrays whoever reads it.
+- **Several AIs, only one writes** — several propose, only one writes, under written rules. I
+  compared models on the same spec: where the spec is precise they converge; where it is silent,
+  each model's judgment shows.
+- **Rules that enforce themselves** — hooks that re-inject the current task into every message,
+  and custom skills: one starts each session up to date, another saves progress by building,
+  testing and committing, only if everything passes.
+- **Memory in files, not in the chat** — context lives in version-controlled files, so anyone,
+  human or AI, can start cold without asking a single question. And a document is marked stale
+  the moment it stops being true.
+- **AI writes, tests decide** — 300+ automated tests are the gate: nothing gets committed unless
+  they pass.
 
 It is the same logic I apply to infrastructure: **every change should have an owner, a record,
-and a way back.**
+and a way back.** And it is what I want to bring to platform operations: automating the
+repetitive side of Basis with AI, without losing change control.
 
 ### 👨‍🏫 Teaching
 
-Secondary school teacher — systems, 4th year. Binary, electricity, resistors, control
-structures and robotics. Teaching forces me to actually understand, and to explain clearly
-under pressure.
+Computer science teacher at a secondary school (DGCyE, Province of Buenos Aires), since January
+2025 — 4th year: binary, electricity, resistors, control structures and robotics. Teaching forces
+me to actually understand, and to explain clearly under pressure.
 
 ### 🎓 Education
 
@@ -180,4 +206,4 @@ under pressure.
 
 [LinkedIn](https://linkedin.com/in/martinalejandrocontereras) · martinalejandrocontreras@outlook.es
 
-🌐 **[confederador.github.io](https://confederador.github.io)** — full portfolio
+🌐 **[confederador.github.io](https://confederador.github.io)** — full portfolio and both CVs
